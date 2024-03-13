@@ -130,8 +130,8 @@ h2 {
 table {
   border-collapse: collapse;
   color: gray;
-  font-size: 1.7vw;
-}
+  font-size: large;
+  }
 td {
   width: 33.33vw;
   text-align: center;
