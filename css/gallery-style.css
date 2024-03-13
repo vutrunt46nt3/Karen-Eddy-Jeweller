@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Serif 4", serif;
+  font-style: normal;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 90vw;
+  font-size: large;
+}
+header {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.two-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo {
+  min-width: 150px;
+  max-width: 12vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+.button-shape {
+  display: inline-block;
+  border: solid black;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.gallery-button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.hero h2 {
+  font-style: italic;
+}
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  font-style: italic;
+  padding: 3rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  align-items: stretch;
+  justify-content: center;
+  border-bottom: black solid;
+  border-width: 2px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  row-gap: 4rem;
+}
+
+.item {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.item::before {
+  content: "";
+  background-color: #333;
+  position: absolute;
+  width: 100vw;
+  height: 2px;
+  top: -2rem;
+}
+
+.center {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: x-large;
+}
+.center a {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: stretch;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: medium;
+}
+
+footer :nth-child(1),
+footer :nth-child(2) {
+  padding-right: 2rem;
+}
+
+footer :nth-child(2) {
+  flex-grow: 3;
+}
+footer :nth-child(1),
+footer :nth-child(3) {
+  flex-grow: 1;
+}
+
+.footer-middle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-links {
+  border-left: solid black;
+  padding-left: 2rem;
+}
+
+footer h3 {
+  padding-bottom: 0.3rem;
+}
+
+footer a {
+  font-weight: 700;
+}

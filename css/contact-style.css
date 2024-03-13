@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Serif 4", serif;
+  font-style: normal;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 90vw;
+}
+header {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  justify-content: space-evenly;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.two-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo {
+  min-width: 150px;
+  max-width: 12vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button-shape {
+  display: inline-block;
+  border: solid black;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.contact-button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.wraper {
+  padding: 0rem 5rem 0rem 5rem;
+  font-size: x-large;
+}
+
+p {
+  padding: 0.5rem 0rem 2rem 0rem;
+}
+
+.contact-box form {
+  display: grid;
+  position: relative;
+  grid-template-columns: 0.1fr 1fr;
+  max-width: 50vw;
+  padding-left: 4rem;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+textarea {
+  height: 10rem;
+}
+button {
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: large;
+}
+
+button:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.contact-box button {
+  position: absolute;
+  top: 107%;
+  right: 0%;
+}
+
+hr {
+  margin: 5rem 0rem 5rem 0rem;
+}
+
+.mail-list-box form {
+  display: grid;
+  position: relative;
+  grid-template-columns: 0.1fr 1fr;
+  max-width: 50vw;
+  padding-left: 4rem;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.mail-list-box button {
+  position: absolute;
+  top: 120%;
+  right: 0%;
+}
+
+h2 {
+  font-size: xx-large;
+}
+table {
+  border-collapse: collapse;
+  color: gray;
+  font-size: 1.7vw;
+}
+td {
+  width: 33.33vw;
+  text-align: center;
+}
+
+tr {
+  height: 3rem;
+}
+
+/* Style odd rows */
+tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+table tr:nth-child(1) {
+  background: none; /* No background color for the first row */
+  font-size: 1.2vw;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: stretch;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: medium;
+}
+
+footer :nth-child(1),
+footer :nth-child(2) {
+  padding-right: 2rem;
+}
+
+footer :nth-child(2) {
+  flex-grow: 3;
+}
+footer :nth-child(1),
+footer :nth-child(3) {
+  flex-grow: 1;
+}
+
+.footer-middle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-links {
+  border-left: solid black;
+  padding-left: 2rem;
+}
+
+footer h3 {
+  padding-bottom: 0.3rem;
+}
+
+footer a {
+  font-weight: 700;
+}
