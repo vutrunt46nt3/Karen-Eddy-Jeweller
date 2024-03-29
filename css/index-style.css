@@ -10,14 +10,13 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  box-sizing: border-box;
 }
 body {
   font-family: "PT Serif", serif;
   font-style: normal;
   margin: 0 auto;
   max-width: 90vw;
-  font-size: min(max(1.3em, 3vw), 1.5em);
+  font-size: clamp(1.3em, 3vw, 1.5em);
 }
 header {
   display: grid;
@@ -51,19 +50,19 @@ a {
 .hero {
   background-color: #cfc2a0;
   display: grid;
-  grid-template-columns: 1fr; /* Single column */
-  grid-template-rows: auto; /* Auto-sized rows */
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 .hero-img {
   min-width: 90vw;
-  grid-column: 1; /* Image spans the entire column */
-  grid-row: 1; /* Image occupies the first row */
-  max-width: 100%; /* Ensure image doesn't overflow */
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 100%;
 }
 h1 {
-  grid-column: 1; /* Overlay content in the same grid area as the image */
-  grid-row: 1; /* Overlay content occupies the same row as the image */
-  position: relative; /* Adjust as needed */
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
   width: fit-content;
   height: fit-content;
   top: 35%;
@@ -113,30 +112,26 @@ h1 {
   word-spacing: 5px;
   border-bottom: solid black;
 }
-/* Grid for Three Pictures */
 .three-pics {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   padding: 1rem 0rem 5rem 0rem;
-  margin: 0 auto; /* Center the grid horizontally */
+  margin: 0 auto;
 }
-/* Customized Image Styling */
 .customised img {
   border-radius: 10px;
-  display: block; /* Remove any extra spacing around images */
-  margin: 0 auto; /* Center images horizontally */
+  display: block;
+  margin: 0 auto;
 }
-/* Customized Paragraph */
 .customised p {
   margin-top: -5rem;
   margin-right: 4rem;
   text-align: end;
   word-spacing: 0.3rem;
   font-style: italic;
-  font-size: min(max(1.3em, 3vw), 1.5em);
+  font-size: clamp(1.3em, 3vw, 1.5em);
 }
-/* Footer Styles */
 hr {
   width: 80%;
   margin: 0 auto;
@@ -145,7 +140,7 @@ hr {
   padding: 1rem;
   text-align: center;
   margin: 2rem 0 3rem;
-  font-size: min(max(1em, 1.5vw), 1.5em);
+  font-size: clamp(1em, 1.5vw, 1.5em);
   border-top: solid black;
 }
 .center a {
